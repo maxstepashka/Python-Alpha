@@ -44,6 +44,7 @@ while True:
         text = text.replace("-шестнадцатеричная-", "hex")
         text = text.replace("-с-", "with")
         text = text.replace("-как-", "as")
+        text = text.replace("-из-", "from")
         file_output = open(path_output, encoding="utf-8", mode="w+")
         file_output.write(text)
         file_output.close()
@@ -75,7 +76,7 @@ while True:
         print('-прервать- -выйти- -общедоступность- -пропустить-')
         print('-двоичная- -восьмеричная- -десятичная- -шестнадцатеричная-')
         print("-пропустить- -вывод - -ввод- -является-")
-        print("-c- -как-\n")
+        print("-c- -как- -из-\n")
 
     elif command == "exit":
         quit()
